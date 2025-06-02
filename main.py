@@ -3,14 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-# Middleware CORS si nécessaire
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],  # Modifier selon tes besoins
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+
 
 @app.get("/")
 async def welcome():
