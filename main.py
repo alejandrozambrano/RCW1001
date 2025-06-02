@@ -26,4 +26,4 @@ async def bienvenue():
         return {"message": "You are in RCW GROUPE 1001"}
     except Exception as e:
         print(f'Exception : {e}')
-        raise HTTPException(status_code=500, detail=str(e))
+        raise HTTPException(status_code=500,detail=str(e))
